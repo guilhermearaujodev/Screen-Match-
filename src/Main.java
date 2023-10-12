@@ -6,11 +6,10 @@ public class Main {
         myFilm.durationInMinutes = 143;
 
         myFilm.displaysTechnicalSheet();
-        myFilm.evaluate(5);
-        myFilm.evaluate(7);
-        myFilm.evaluate(4);
-        System.out.println(myFilm.sumOfEvaluation);
-        System.out.println(myFilm.totalReviews);
+        myFilm.evaluate(10);
+        myFilm.evaluate(10);
+        myFilm.evaluate(9);
+        System.out.println("Total Reviews: " + myFilm.getTotalReviews());
         System.out.println(myFilm.avarageEvaluation());
     }
 }

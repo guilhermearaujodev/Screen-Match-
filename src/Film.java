@@ -2,9 +2,13 @@ public class Film {
     String name;
     int yearRelease;
     boolean includedInThePlan;
-    double sumOfEvaluation;
-    int totalReviews;
+    private double sumOfEvaluation;
+    private int totalReviews;
     int durationInMinutes;
+
+    int getTotalReviews(){
+        return totalReviews;
+    }
 
     //método para printar o nome e o ano de lançamento do filme
     void displaysTechnicalSheet(){
