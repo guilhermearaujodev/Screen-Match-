@@ -3,9 +3,9 @@ import br.com.github.screenmatch.models.Film;
 public class Main {
     public static void main(String[] args) {
         Film myFilm = new Film();
-        myFilm.name = "The Avengers";
-        myFilm.yearRelease = 2012;
-        myFilm.durationInMinutes = 143;
+        myFilm.setName("The Avengers");
+        myFilm.setYearRelease(2012);
+        myFilm.setDurationInMinutes(143);
 
         myFilm.displaysTechnicalSheet();
         myFilm.evaluate(10);

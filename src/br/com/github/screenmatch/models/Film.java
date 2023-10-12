@@ -8,8 +8,40 @@ public class Film {
     private int totalReviews;
     private int durationInMinutes;
 
+    public String getName() {
+        return name;
+    }
+
+    public int getYearRelease() {
+        return yearRelease;
+    }
+
+    public boolean isIncludedInThePlan() {
+        return includedInThePlan;
+    }
+
+    public int getDurationInMinutes() {
+        return durationInMinutes;
+    }
+
     public int getTotalReviews(){
         return totalReviews;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setYearRelease(int yearRelease) {
+        this.yearRelease = yearRelease;
+    }
+
+    public void setIncludedInThePlan(boolean includedInThePlan) {
+        this.includedInThePlan = includedInThePlan;
+    }
+
+    public void setDurationInMinutes(int durationInMinutes) {
+        this.durationInMinutes = durationInMinutes;
     }
 
     //método para printar o nome e o ano de lançamento do filme
