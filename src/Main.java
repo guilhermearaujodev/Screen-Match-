@@ -5,7 +5,6 @@ public class Main {
         myFilm.yearRelease = 2012;
         myFilm.durationInMinutes = 143;
 
-        System.out.println(myFilm.name);
-        System.out.println(myFilm.yearRelease);
+        myFilm.displaysTechnicalSheet();
     }
 }
