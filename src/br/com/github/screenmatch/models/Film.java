@@ -1,27 +1,29 @@
+package br.com.github.screenmatch.models;
+
 public class Film {
-    String name;
-    int yearRelease;
-    boolean includedInThePlan;
+    private String name;
+    private int yearRelease;
+    private boolean includedInThePlan;
     private double sumOfEvaluation;
     private int totalReviews;
-    int durationInMinutes;
+    private int durationInMinutes;
 
-    int getTotalReviews(){
+    public int getTotalReviews(){
         return totalReviews;
     }
 
     //método para printar o nome e o ano de lançamento do filme
-    void displaysTechnicalSheet(){
-        System.out.println("Film's name: " + name);
+    public void displaysTechnicalSheet(){
+        System.out.println("br.com.github.screenmatch.models.Film's name: " + name);
         System.out.println("Release year: " + yearRelease);
     }
 //soma das notas e total de avaliações
-    void evaluate(double note){
+    public void evaluate(double note){
         sumOfEvaluation += note;
         totalReviews++;
     }
 //média das avaliações
-    double avarageEvaluation(){
+    public double avarageEvaluation(){
         return sumOfEvaluation / totalReviews;
     }
 }
