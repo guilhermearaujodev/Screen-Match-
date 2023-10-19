@@ -46,7 +46,7 @@ public class Title {
 
     //método para printar o nome e o ano de lançamento do filme
     public void displaysTechnicalSheet(){
-        System.out.println("br.com.github.screenmatch.models.Film's name: " + name);
+        System.out.println("name: " + name);
         System.out.println("Release year: " + yearRelease);
     }
     //soma das notas e total de avaliações
