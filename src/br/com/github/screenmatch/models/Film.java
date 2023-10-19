@@ -1,6 +1,6 @@
 package br.com.github.screenmatch.models;
 
-public class Film {
+public class Film extends Title {
   private String director;
 
     public String getDirector() {
