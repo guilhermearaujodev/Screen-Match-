@@ -1,9 +1,20 @@
 package br.com.github.screenmatch.models;
 
-public class Episode {
+import br.com.github.screenmatch.calculator.Classification;
+
+public class Episode implements Classification {
     private int number;
     private String name;
     private Series series;
+    private int totalViews;
+
+    public int getTotalViews() {
+        return totalViews;
+    }
+
+    public void setTotalViews(int totalViews) {
+        this.totalViews = totalViews;
+    }
 
     public int getNumber() {
         return number;
@@ -27,5 +38,14 @@ public class Episode {
 
     public void setSeries(Series series) {
         this.series = series;
+    }
+
+    @Override
+    public int getClassification() {
+        if (totalViews > 100) {
+            return 4;
+        } else {
+            return 2;
+        }
     }
 }
