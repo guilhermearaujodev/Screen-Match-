@@ -1,3 +1,4 @@
+import br.com.github.screenmatch.calculator.TimeCalculator;
 import br.com.github.screenmatch.models.Film;
 import br.com.github.screenmatch.models.Series;
 
@@ -27,5 +28,16 @@ public class Main {
         onePiece.setMinutesPerEpisode(50);
         System.out.println("Duration to marathon the One Piece: " + onePiece.getDurationInMinutes());
 
+        Film nextFilm = new Film();
+        nextFilm.setName("Batman");
+        nextFilm.setYearRelease(2022);
+        nextFilm.setDurationInMinutes(177);
+        System.out.println("Duration film: " + nextFilm.getDurationInMinutes());
+
+        TimeCalculator calculator = new TimeCalculator();
+        calculator.include(myFilm);
+        calculator.include(nextFilm);
+        calculator.include(onePiece);
+        System.out.println(calculator.getFullTime());
     }
 }
