@@ -50,5 +50,13 @@ public class Main {
         episode.setSeries(onePiece);
         episode.setTotalViews(300);
         filter.filter(episode);
+
+        var threeFilme = new Film();
+       threeFilme.setName("Joker");
+       threeFilme.setDurationInMinutes(122);
+       threeFilme.setYearRelease(2019);
+       threeFilme.evaluate(10);
+
+
     }
 }
