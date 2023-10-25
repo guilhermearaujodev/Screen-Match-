@@ -62,7 +62,11 @@ public class Main {
         filmList.add(threeFilme);
         filmList.add(myFilm);
         filmList.add(nextFilm);
-
+        System.out.println("List size " + filmList.size());
+        //Escolhendo um filme da lista para imprimir
+        System.out.println("first film " + filmList.get(0).getName());
+        System.out.println(filmList);
+        System.out.println("toString film " + filmList.get(0).toString());
 
     }
 }
