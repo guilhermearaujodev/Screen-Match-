@@ -5,6 +5,7 @@ import br.com.github.screenmatch.models.Film;
 import br.com.github.screenmatch.models.Series;
 
 import javax.xml.namespace.QName;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
@@ -56,6 +57,11 @@ public class Main {
        threeFilme.setDurationInMinutes(122);
        threeFilme.setYearRelease(2019);
        threeFilme.evaluate(10);
+
+        ArrayList<Film> filmList = new ArrayList<>();
+        filmList.add(threeFilme);
+        filmList.add(myFilm);
+        filmList.add(nextFilm);
 
 
     }
