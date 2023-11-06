@@ -5,11 +5,8 @@ import br.com.github.screenmatch.calculator.Classification;
 public class Film extends Title implements Classification {
   private String director;
 
-    public Film(String name) {
-        this.setName(name);
-    }
-
-    public Film() {
+    public Film(String name, int yearRelease) {
+        super(name, yearRelease);
     }
 
     public String getDirector() {

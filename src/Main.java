@@ -9,9 +9,9 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Film myFilm = new Film("The avengers");
+        Film myFilm = new Film("The avengers", 2012);
         //myFilm.setName("The Avengers");
-        myFilm.setYearRelease(2012);
+        //myFilm.setYearRelease(2012);
         myFilm.setDurationInMinutes(143);
         System.out.println("Duration film: " + myFilm.getDurationInMinutes());
 
@@ -22,18 +22,18 @@ public class Main {
         System.out.println("Total Reviews: " + myFilm.getTotalReviews());
         System.out.println(myFilm.avarageEvaluation());
 
-        Series onePiece = new Series();
-        onePiece.setName("One Piece");
-        onePiece.setYearRelease(2023);
+        Series onePiece = new Series("One Piece", 2023);
+        //onePiece.setName("One Piece");
+        //onePiece.setYearRelease(2023);
         onePiece.displaysTechnicalSheet();
         onePiece.setSeasons(1);
         onePiece.setEpisodesPerSeason(7);
         onePiece.setMinutesPerEpisode(50);
         System.out.println("Duration to marathon the One Piece: " + onePiece.getDurationInMinutes());
 
-        Film nextFilm = new Film("Batman");
+        Film nextFilm = new Film("Batman", 2022);
         //nextFilm.setName("Batman");
-        nextFilm.setYearRelease(2022);
+        //nextFilm.setYearRelease(2022);
         nextFilm.setDurationInMinutes(177);
         System.out.println("Duration film: " + nextFilm.getDurationInMinutes());
 
@@ -52,10 +52,10 @@ public class Main {
         episode.setTotalViews(300);
         filter.filter(episode);
 
-        var threeFilme = new Film("Joker");
+        var threeFilme = new Film("Joker", 2019);
         //threeFilme.setName("Joker");
        threeFilme.setDurationInMinutes(122);
-       threeFilme.setYearRelease(2019);
+       //threeFilme.setYearRelease(2019);
        threeFilme.evaluate(10);
 
         ArrayList<Film> filmList = new ArrayList<>();
