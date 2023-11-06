@@ -19,6 +19,7 @@ public class TimeCalculator {
 //}
 
 public void include(Title title){
+    System.out.println("add duration in minutes " + title);
         this.fullTime += title.getDurationInMinutes();
     }
 }
