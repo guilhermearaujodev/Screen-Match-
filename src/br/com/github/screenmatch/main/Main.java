@@ -1,3 +1,5 @@
+package br.com.github.screenmatch.main;
+
 import br.com.github.screenmatch.calculator.RecommendationFilter;
 import br.com.github.screenmatch.calculator.TimeCalculator;
 import br.com.github.screenmatch.models.Episode;
