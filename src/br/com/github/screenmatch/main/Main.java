@@ -8,6 +8,7 @@ import br.com.github.screenmatch.models.Series;
 
 import javax.xml.namespace.QName;
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class Main {
     public static void main(String[] args) {
@@ -69,7 +70,5 @@ public class Main {
         System.out.println("first film " + filmList.get(0).getName());
         System.out.println(filmList);
         System.out.println("toString film " + filmList.get(0).toString());
-
-
     }
 }
