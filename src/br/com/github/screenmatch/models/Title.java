@@ -1,6 +1,6 @@
 package br.com.github.screenmatch.models;
 
-public class Title {
+public class Title implements Comparable<Title>{
     private String name;
     private int yearRelease;
     private boolean includedInThePlan;
@@ -62,5 +62,10 @@ public class Title {
     //média das avaliações
     public double avarageEvaluation(){
         return sumOfEvaluation / totalReviews;
+    }
+
+    @Override
+    public int compareTo(Title otherTitle) {
+        return this.getName().compareTo(otherTitle.getName());
     }
 }
